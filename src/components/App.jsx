@@ -78,7 +78,7 @@ export default function App() {
     let arr1 = arr;
     arr1.push(val);
     setArr(arr1);
-    console.log(arr, "Changed array");
+    console.log(arr,"changed")
   }
   return <div className="container py-5 px-4">
     <Header />
