@@ -7,7 +7,6 @@ import { RiTeamFill } from "react-icons/ri";
 
 
 export const Chat = ({arr}) => {
-  console.log(arr);
   return <div >
     <div className="input-group mb-3 py-2 ">
       <input type="text" className="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1" style={{ backgroundColor: "#352E3A", border: "none" }} />

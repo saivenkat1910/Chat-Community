@@ -32,7 +32,10 @@ function Page({ fun }) {
         };
         fun(newCommunity);
         event.preventDefault();
-    
+        setTitle("");
+        setDescription("");
+        setAddress("");
+        setUrl("");
     }
 
     return (<div>
@@ -46,19 +49,19 @@ function Page({ fun }) {
             </div> */}
             <div className="mb-3">
 
-                <input name="title"  type="text" onChange={(e) => { setTitle(e.target.value) }} className=" form-control py-2 mb-2 text-white" placeholder="community Title" style={{ width: "80%" ,backgroundColor:"#352E3A"}} />
+                <input name="title" value={title} type="text" onChange={(e) => { setTitle(e.target.value) }} className=" form-control py-2 mb-2 text-white" placeholder="community Title" style={{ width: "80%" ,backgroundColor:"#352E3A"}} />
             </div>
             <div className="mb-3">
-                <textarea name="description"  onChange={(e) => { setDescription(e.target.value) }} className="form  text-white" placeholder="add description" style={{backgroundColor:"#352E3A"}}/>
+                <textarea name="description" value={description} onChange={(e) => { setDescription(e.target.value) }} className="form  text-white" placeholder="add description" style={{backgroundColor:"#352E3A"}}/>
             </div>
 
             <div  className="input-group mb-3" style={{ width: "80%" ,backgroundColor:"#352E3A"}}>
-                <input type="text" name="url"  onChange={(e) => { setUrl(e.target.value) }} className="form-control  text-white" placeholder="Create URL" aria-label="Recipient's username" aria-describedby="basic-addon2" style={{backgroundColor:"#352E3A"}}/>
+                <input type="text" name="url" value={url} onChange={(e) => { setUrl(e.target.value) }} className="form-control  text-white" placeholder="Create URL" aria-label="Recipient's username" aria-describedby="basic-addon2" style={{backgroundColor:"#352E3A"}}/>
                 <span  className="input-group-text text-white" id="basic-addon2" style={{ backgroundColor: "#040720" }}>.rariko.io</span>
             </div>
 
             <div  className="input-group mb-3 " style={{ width: "80%" }}>
-                <input type="text" name="address"  onChange={(e) => { setAddress(e.target.value) }} className="form-control  text-white" placeholder="Contact addrees" style={{backgroundColor:"#352E3A"}}/>
+                <input type="text" value={address} name="address"  onChange={(e) => { setAddress(e.target.value) }} className="form-control  text-white" placeholder="Contact addrees" style={{backgroundColor:"#352E3A"}}/>
                 <button  className="btn btn-outline-secondary dropdown-toggle" style={{ width: "100px" }} type="button" data-bs-toggle="dropdown" aria-expanded="false"><span><img src="https://bootstrapious.com/i/snippets/sn-chat/avatar.svg" style={{ height: "20px" }} /></span></button>
                 <ul  className="dropdown-menu dropdown-menu-end dropp" style={{ width: "20px" }} > {coummunitychatlist.map(noteItem => (
                     <li><a  className="dropdown-item" href="#" ><span><img src={noteItem.imagesrc} style={{ height: "60px", width: "100%" }} /></span></a></li>
