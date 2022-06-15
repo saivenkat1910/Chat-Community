@@ -53,7 +53,7 @@ const coummunitychatlist=[
         title:"Polygon4",
         msg:"hi its updated",
         time:"12 Jan",
-        imagesrc:"https://bootstrapious.com/i/snippets/sn-chat/avatar.svg"
+        imagesrc:"https://bootstrapious.com/i/snippets/sn-chat/avatar.svgc:"
     }
 
 ];

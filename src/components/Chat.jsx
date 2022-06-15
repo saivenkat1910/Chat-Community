@@ -10,8 +10,8 @@ export const Chat = ({arr}) => {
   console.log(arr);
   return <div >
     <div className="input-group mb-3 py-2 ">
-      <input type="text" className="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1" style={{ backgroundColor: "grey", border: "none" }} />
-      <span className="input-group-text" id="basic-addon1" style={{ backgroundColor: "grey", border: "none" }}><BiSearch /></span>
+      <input type="text" className="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1" style={{ backgroundColor: "#352E3A", border: "none" }} />
+      <span className="input-group-text" id="basic-addon1" style={{ backgroundColor: "#352E3A", border: "none" }}><BiSearch /></span>
     </div>
 
     <button className="btn btn-primary col-12 py-2 mb-2" style={{ backgroundColor: "blueviolet" }}><RiTeamFill />Create new coummunities</button>

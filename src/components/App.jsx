@@ -82,8 +82,8 @@ export default function App() {
   }
   return <div className="container py-5 px-4">
     <Header />
-    <div className="row justify-content-around px-4 border py-3">
-      <div className="col-4 ">
+    <div className="row justify-content-around px-4 py-3 mb-3" style={{border:"1px solid black",marginTop:"25px"}}>
+      <div className="col-4  ">
         <Chat arr={arr}/>
       </div>
 
